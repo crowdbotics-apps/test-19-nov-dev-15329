@@ -35,7 +35,6 @@ export default class Blank extends React.Component {
     <View>
       <TextInput
         placeholder="Number Input Placeholder"
-        keyboardType="numeric"
         style={styles.TextInput_2}
         value={this.state.TextInput_2}
         onChangeText={nextValue => this.setState({ TextInput_2: nextValue })}
@@ -54,13 +53,11 @@ export default class Blank extends React.Component {
       />
       <TextInput
         placeholder="Sample text input placeholder"
-        multiline={true}
         style={styles.TextInput_6}
         value={this.state.TextInput_6}
         onChangeText={nextValue => this.setState({ TextInput_6: nextValue })}
       />
       <DateTimePicker
-        showIcon={false}
         style={styles.DateTimePicker_7}
         date={this.state.DateTimePicker_7}
         onDateChange={selectedDate =>
@@ -68,7 +65,6 @@ export default class Blank extends React.Component {
         }
       />
       <Switch
-        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
         style={styles.Switch_8}
         value={this.state.Switch_8}
         onValueChange={nextChecked => this.setState({ Switch_8: nextChecked })}
@@ -82,6 +78,7 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
   View_1: {},
   TextInput_2: {
     borderWidth: 5,
@@ -90,6 +87,7 @@ const styles = StyleSheet.create({
     borderTopWidth: 5,
     borderBottomWidth: 5
   },
+
   Text_3: {
     borderWidth: 3,
     borderLeftWidth: 3,
@@ -97,6 +95,7 @@ const styles = StyleSheet.create({
     borderTopWidth: 3,
     borderBottomWidth: 3
   },
+
   TextInput_4: {
     borderWidth: 2,
     borderLeftWidth: 2,
@@ -104,6 +103,7 @@ const styles = StyleSheet.create({
     borderTopWidth: 2,
     borderBottomWidth: 2
   },
+
   Button_5: {
     borderWidth: 4,
     borderLeftWidth: 4,
@@ -111,6 +111,7 @@ const styles = StyleSheet.create({
     borderTopWidth: 4,
     borderBottomWidth: 4
   },
+
   TextInput_6: {
     borderWidth: 3,
     borderLeftWidth: 3,
@@ -118,6 +119,7 @@ const styles = StyleSheet.create({
     borderTopWidth: 3,
     borderBottomWidth: 3
   },
+
   DateTimePicker_7: {
     borderWidth: 3,
     borderLeftWidth: 3,
@@ -125,6 +127,7 @@ const styles = StyleSheet.create({
     borderTopWidth: 3,
     borderBottomWidth: 3
   },
+
   Switch_8: {
     alignSelf: "flex-start",
     borderWidth: 2,
@@ -132,5 +135,68 @@ const styles = StyleSheet.create({
     borderRightWidth: 2,
     borderTopWidth: 2,
     borderBottomWidth: 2
+  },
+  View_1: {},
+  TextInput_2: {
+    borderWidth: 5,
+    borderLeftWidth: 5,
+    borderRightWidth: 5,
+    borderTopWidth: 5,
+    borderBottomWidth: 5,
+    borderRadius: 7
+  },
+  Text_3: {
+    borderWidth: 3,
+    borderLeftWidth: 3,
+    borderRightWidth: 3,
+    borderTopWidth: 3,
+    borderBottomWidth: 3,
+    borderRadius: 7
+  },
+  TextInput_4: {
+    borderWidth: 2,
+    borderLeftWidth: 2,
+    borderRightWidth: 2,
+    borderTopWidth: 2,
+    borderBottomWidth: 2,
+    borderRadius: 6
+  },
+  Button_5: {
+    width: 100,
+    borderWidth: 4,
+    borderLeftWidth: 4,
+    borderRightWidth: 4,
+    borderTopWidth: 4,
+    borderBottomWidth: 4,
+    borderRadius: 8
+  },
+  TextInput_6: {
+    height: 100,
+    borderWidth: 3,
+    borderLeftWidth: 3,
+    borderRightWidth: 3,
+    borderTopWidth: 3,
+    borderBottomWidth: 3,
+    borderRadius: 8
+  },
+  DateTimePicker_7: {
+    width: 100,
+    alignSelf: "flex-end",
+    borderWidth: 3,
+    borderLeftWidth: 3,
+    borderRightWidth: 3,
+    borderTopWidth: 3,
+    borderBottomWidth: 3,
+    borderRadius: 9,
+    textAlign: "right"
+  },
+  Switch_8: {
+    alignSelf: "flex-end",
+    borderWidth: 2,
+    borderLeftWidth: 2,
+    borderRightWidth: 2,
+    borderTopWidth: 2,
+    borderBottomWidth: 2,
+    borderRadius: 12
   }
 })
